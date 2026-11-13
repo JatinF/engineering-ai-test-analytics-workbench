@@ -23,6 +23,7 @@ def test_postgres_semantic_model() -> None:
     store.apply_schema()
     store.load_lab()
     rates = {row["build_id"]: row["pass_rate"] for row in store.pass_rates("SYN-TENANT-RIDGEBENCH")}
-    assert rates["SYN-FW-417"] == pytest.approx(21 / 40)
+    # Postgres NUMERIC arrives as Decimal. SQLite returns float. Compare as float.
+    assert float(rates["SYN-FW-417"]) == pytest.approx(21 / 40)
     assert store.dq_count() == 9
     conn.close()
