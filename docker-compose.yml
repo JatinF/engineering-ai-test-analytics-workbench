@@ -1,0 +1,9 @@
+# This file was not started. Docker was not installed on the workstation.
+services:
+  api:
+    build: .
+    image: engineering-ai-test-analytics-workbench:ci
+    ports:
+      - "8000:8000"
+    environment:
+      ENG_WORKBENCH_ALLOW_REMOTE: "0"

@@ -1,0 +1,8 @@
+name: ridgebench
+version: "1.0.0"
+profile: ridgebench
+model-paths: ["models"]
+seed-paths: ["seeds"]
+models:
+  ridgebench:
+    +materialized: table

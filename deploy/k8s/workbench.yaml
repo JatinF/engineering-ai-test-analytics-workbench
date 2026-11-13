@@ -1,0 +1,38 @@
+# applied: false
+# kubectl apply was not run. Docker was not installed on the workstation.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eng-workbench
+  labels:
+    app: eng-workbench
+    applied: "false"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eng-workbench
+  template:
+    metadata:
+      labels:
+        app: eng-workbench
+    spec:
+      containers:
+        - name: api
+          image: engineering-ai-test-analytics-workbench:ci
+          ports:
+            - containerPort: 8000
+          env:
+            - name: ENG_WORKBENCH_ALLOW_REMOTE
+              value: "0"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eng-workbench
+spec:
+  selector:
+    app: eng-workbench
+  ports:
+    - port: 80
+      targetPort: 8000

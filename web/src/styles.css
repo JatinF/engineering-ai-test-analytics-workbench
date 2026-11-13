@@ -1,0 +1,148 @@
+:root {
+  color: #102033;
+  background: #f4f7fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.top {
+  background: #101820;
+  color: #f4f7fb;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.notice {
+  color: #9ad7d2;
+  font-size: 13px;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: calc(100vh - 72px);
+}
+
+nav {
+  background: #ffffff;
+  border-right: 1px solid #e1e8ef;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav button {
+  text-align: left;
+  border: 1px solid #e1e8ef;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+nav button.active {
+  border-color: #0f6e6e;
+  color: #0f5c6b;
+}
+
+main {
+  padding: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e1e8ef;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #d9e3ec;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #5c6b7a;
+}
+
+input,
+select {
+  border: 1px solid #e1e8ef;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #102033;
+  background: #ffffff;
+}
+
+button.primary {
+  background: #0f6e6e;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e1e8ef;
+  font-size: 14px;
+}
+
+.bar {
+  height: 10px;
+  background: #e1e8ef;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #1d4e89;
+}
+
+.error {
+  color: #9b2c2c;
+}
+
+.muted {
+  color: #5c6b7a;
+}

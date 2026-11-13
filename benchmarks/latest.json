@@ -1,0 +1,52 @@
+{
+  "adoption_fixture": {
+    "distinct_actors": [
+      "SYN-USER-IDA",
+      "SYN-USER-OTTO"
+    ],
+    "investigate_events": 60,
+    "repeated_subjects": 4
+  },
+  "agent_wall_seconds": {
+    "case": "SYN-FW-417 SYN-CODE-THERM",
+    "max": 0.0029792999994242564,
+    "min": 0.0018635000014910474,
+    "p50": 0.0020158999977866188,
+    "p95": 0.0025613000034354627,
+    "repeats": 40
+  },
+  "cases": 16,
+  "citation_accuracy": 0.9375,
+  "citation_floor": 0.9,
+  "dataset": "lab-v1-fixed-29",
+  "device_calls": 0,
+  "disagreements": [
+    "SYN-FW-419 SYN-CODE-LAT"
+  ],
+  "dq_failures": 9,
+  "hardware": {
+    "cores": 4,
+    "free_physical_memory_kb": 8926092,
+    "logical_processors": 8,
+    "processor": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+    "python": "3.12.10",
+    "system": "Windows",
+    "total_visible_memory_kb": 32916868
+  },
+  "hosted_model": "not-run",
+  "human_correction_rate": 0.0625,
+  "manual_sql_wall_seconds": {
+    "max": 0.0004927999980282038,
+    "min": 0.000367300002835691,
+    "p50": 0.0003892999957315624,
+    "p95": 0.00045449999743141234,
+    "repeats": 40
+  },
+  "note": "Adoption counts are the controlled fixture in this process, not engineer usage in a company. Price was not applied.",
+  "price": "none",
+  "recommendation": "keep_agent",
+  "success_floor": 0.9,
+  "successful_investigation_rate": 0.9375,
+  "tokens": 0,
+  "unauthorized_protected_tool_actions": 0
+}

@@ -1,0 +1,12 @@
+{
+  "uid": "eng-test-analytics-workbench",
+  "title": "Ridgebench lab (not imported)",
+  "tags": ["not-imported"],
+  "note": "This dashboard was not imported. Grafana was not run.",
+  "panels": [
+    {"title": "Investigations", "expr": "eng_investigations_total"},
+    {"title": "Data-quality failures", "expr": "eng_dq_failures_total"},
+    {"title": "Denials", "expr": "eng_denials_total"},
+    {"title": "Corrections", "expr": "eng_corrections_total"}
+  ]
+}

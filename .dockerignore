@@ -1,0 +1,14 @@
+.venv
+.git
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+web/node_modules
+web/dist
+dbt/target
+dbt/logs
+benchmarks
+tests
+**/*.duckdb
+**/*.db

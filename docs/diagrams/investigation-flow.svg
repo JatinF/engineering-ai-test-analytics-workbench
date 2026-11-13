@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560">
+  <rect width="1100" height="560" fill="#f4f7fb"/>
+  <rect x="0" y="0" width="1100" height="64" fill="#101820"/>
+  <text x="32" y="40" fill="#f4f7fb" font-family="Segoe UI, sans-serif" font-size="22">Synthetic firmware investigation</text>
+  <g font-family="Segoe UI, sans-serif">
+    <rect x="36" y="120" width="170" height="92" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="52" y="158" fill="#102033" font-size="15">Synthetic logs</text>
+    <text x="52" y="182" fill="#5c6b7a" font-size="12">builds, runs, failures</text>
+    <rect x="250" y="120" width="170" height="92" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="266" y="158" fill="#102033" font-size="15">Quality checks</text>
+    <text x="266" y="182" fill="#5c6b7a" font-size="12">reject bad rows</text>
+    <rect x="464" y="120" width="170" height="92" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="480" y="158" fill="#102033" font-size="15">Semantic SQL</text>
+    <text x="480" y="182" fill="#5c6b7a" font-size="12">pass rate and history</text>
+    <rect x="678" y="120" width="170" height="92" rx="10" fill="#ffffff" stroke="#0f6e6e"/>
+    <text x="694" y="158" fill="#0f5c6b" font-size="15">Draft finding</text>
+    <text x="694" y="182" fill="#5c6b7a" font-size="12">citations required</text>
+    <rect x="892" y="120" width="170" height="92" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="908" y="158" fill="#102033" font-size="15">Engineer review</text>
+    <text x="908" y="182" fill="#5c6b7a" font-size="12">approve or correct</text>
+    <line x1="206" y1="166" x2="242" y2="166" stroke="#8aa0b5" stroke-width="2" marker-end="url(#tip)"/>
+    <line x1="420" y1="166" x2="456" y2="166" stroke="#8aa0b5" stroke-width="2" marker-end="url(#tip)"/>
+    <line x1="634" y1="166" x2="670" y2="166" stroke="#8aa0b5" stroke-width="2" marker-end="url(#tip)"/>
+    <line x1="848" y1="166" x2="884" y2="166" stroke="#8aa0b5" stroke-width="2" marker-end="url(#tip)"/>
+    <rect x="36" y="280" width="1026" height="120" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="56" y="316" fill="#1e3a5f" font-size="16">Held-out wording</text>
+    <text x="56" y="344" fill="#102033" font-size="14">SYN-FW-419 latency logs say "queue depth pause". The change note is not in those logs.</text>
+    <text x="56" y="368" fill="#102033" font-size="14">The human label is regression. The phrase rule returns insufficient evidence. That case is corrected.</text>
+    <rect x="36" y="424" width="1026" height="88" rx="10" fill="#ffffff" stroke="#e1e8ef"/>
+    <text x="56" y="460" fill="#1f7a4d" font-size="15">DRAFT_NOT_A_PRODUCT_DISPOSITION</text>
+    <text x="56" y="486" fill="#5c6b7a" font-size="14">No device is flashed. A protected flash tool stays denied. Another tenant's logs are not retrieved.</text>
+  </g>
+  <defs>
+    <marker id="tip" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8aa0b5"/>
+    </marker>
+  </defs>
+</svg>

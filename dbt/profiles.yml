@@ -1,0 +1,7 @@
+ridgebench:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: target/ridge.duckdb
+      threads: 1
