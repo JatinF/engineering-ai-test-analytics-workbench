@@ -36,7 +36,14 @@ The reproducible path is the venv, `pip install -e ".[dev,dbt]"`, pytest, and `p
 
 `.github/workflows/security.yml` runs `scripts/reject_private_keys.py`. The private-key markers in that file are split so the scanner does not match itself.
 
-The first commit does not list Actions run ids. Those ids belong in a later commit after the jobs finish.
+Actions on `8aab4e8c963d1bc6d209d8c7bf3427b571d97cf3`:
+
+| Workflow | Run | Check runs |
+| --- | --- | --- |
+| ci | 43394958257 | integration 131783539113, test 131783539454, docker-build 131783539483, web 131783539955 |
+| security | 43394958268 | scan 131783538598 |
+
+Each of those five annotation lists was empty. The web job on `8d30144487bec60029606cb0e6de70eba6b8f81a` still had the Node.js 20 warning from `actions/setup-node@v4`. That run is not the clean record. This tree pins `actions/setup-node@v7`. Docker image proof is the `docker-build` check run above. A local Docker build was not run.
 
 ## AWS sketch
 

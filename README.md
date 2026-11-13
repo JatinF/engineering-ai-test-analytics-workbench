@@ -96,7 +96,7 @@ Local pytest: 19 passed, 1 skipped. The skip is Postgres. Ruff and mypy were cle
 
 Deployment decision: **NO-GO**.
 
-Docker and kubectl were not on this workstation's PATH. A local image build was not run. The image proof is the GitHub Actions `docker-build` job once that job is green. Local compose was not started. Airflow, Terraform, EKS, a warehouse, a hosted model, and Grafana were not run. Postgres is used only by the Actions integration job when that job is green. Unset database URLs stay on the SQLite lab. Any other host is blocked, the process does not dial, and the error text does not include the URL.
+Docker and kubectl were not on this workstation's PATH. A local image build was not run. The image proof is GitHub Actions `docker-build` check run 131783539483 in ci run 43394958257 on `8aab4e8c963d1bc6d209d8c7bf3427b571d97cf3`. Security run 43394958268, scan check run 131783538598, succeeded on the same commit. The other ci check runs are integration 131783539113, test 131783539454, and web 131783539955. All five annotation lists were empty. Local compose was not started. Airflow, Terraform, EKS, a warehouse, a hosted model, and Grafana were not run. Postgres is used only by the Actions integration job. Unset database URLs stay on the SQLite lab. Any other host is blocked, the process does not dial, and the error text does not include the URL.
 
 The in-app reliability page is the BI surface that ran. `deploy/grafana/dashboard.json` was not imported.
 
